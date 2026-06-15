@@ -1,0 +1,6 @@
+{
+  "name": "BookMyTheatre",
+  "description": "An interactive theatre, cinema screen, and live show booking platform inspired by BookMyShow with premium seat customizers, F&B selection, and instant booking histories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
