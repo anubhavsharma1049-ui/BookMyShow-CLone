@@ -21,10 +21,7 @@ services:
     dockerContext: .
     dockerfilePath: Dockerfile.mongo
     plan: free
-    # Note: Free tier on Render does not support persistent disks. 
     # To persist database data, upgrade to a paid instance tier and uncomment the block below.
-    # Otherwise, MongoDB will run in ephemeral mode.
-    # Alternatively, you can use MongoDB Atlas (free tier) and set the connection URI environment variables.
     # disk:
     #   name: mongo-data
     #   mountPath: /data/db
@@ -125,13 +122,12 @@ services:
         value: http://eureka:eureka123@discovery-service:8761/eureka/
 
   # 8. React Frontend (served by Nginx reverse proxy)
-  # 8. React Frontend (served by Nginx reverse proxy)
-- type: web
-  name: react-frontend
-  env: docker
-  dockerContext: .
-  dockerfilePath: Dockerfile
-  plan: free
-  envVars:
-    - key: PORT
-      value: 3000
+  - type: web
+    name: react-frontend
+    env: docker
+    dockerContext: .
+    dockerfilePath: Dockerfile
+    plan: free
+    envVars:
+      - key: PORT
+        value: 3000
