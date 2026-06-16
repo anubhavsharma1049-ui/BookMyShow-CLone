@@ -1,0 +1,91 @@
+# =========================================================================
+# OS & System Files
+# =========================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# =========================================================================
+# Node & Frontend (React / Vite)
+# =========================================================================
+node_modules/
+/dist/
+/out/
+/tmp/
+.eslintcache
+.vite/
+.yarn-integrity
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# =========================================================================
+# Java & Maven (Spring Boot backend)
+# =========================================================================
+**/target/
+**/build/
+.gradle/
+.lazyfiles/
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Microservice log files
+*.log
+hs_err_pid*
+replay_pid*
+
+# =========================================================================
+# IDEs & Editors (VS Code, IntelliJ IDEA, Eclipse)
+# =========================================================================
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Eclipse
+.settings/
+.project
+.classpath
+.factorypath
+.metadata/
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
+
+# Sublime Text / TextMate
+*.sublime-project
+*.sublime-workspace
+
+# =========================================================================
+# Local & Temporary Folders
+# =========================================================================
+.planning/
+.gemini/
