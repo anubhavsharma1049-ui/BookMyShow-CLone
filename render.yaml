@@ -125,12 +125,13 @@ services:
         value: http://eureka:eureka123@discovery-service:8761/eureka/
 
   # 8. React Frontend (served by Nginx reverse proxy)
-  - type: web
-    name: react-frontend
-    env: docker
-    dockerContext: .
-    dockerfilePath: Dockerfile
-    plan: free
-    ports:
-      - port: 3000
-        protocol: http
+  # 8. React Frontend (served by Nginx reverse proxy)
+- type: web
+  name: react-frontend
+  env: docker
+  dockerContext: .
+  dockerfilePath: Dockerfile
+  plan: free
+  envVars:
+    - key: PORT
+      value: 3000
